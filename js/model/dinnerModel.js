@@ -107,11 +107,12 @@ success: function (data) {
 selectedRecipes = data.Results;
 console.log(selectedRecipes);
 
-this.returnSelectedDishes();
-
 
 
 }
+}
+this.returnSelectedRecipes();
+notifyObservers();
 });
 }
 
@@ -135,9 +136,8 @@ this.selectedRecipe = data;
 }
 
 
-this.returnSelectedDishes = function (){
+this.returnSelectedRecipes = function (){
 return selectedRecipes
 }
 
 }
-Chattkonversationen är avslutad
